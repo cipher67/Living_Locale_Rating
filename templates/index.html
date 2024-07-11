@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Locale Rating</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Living Locale Rating</h1>
+        <form action="/predict" method="post">
+            <label for="property_type">Property Type:</label>
+            <select id="property_type" name="property_type">
+                <option value="Apartment">Apartment</option>
+                <option value="Bungalow">Bungalow</option>
+                <option value="Single-family home">Single-family home</option>
+                <option value="Duplex">Duplex</option>
+                <option value="Container Home">Container Home</option>
+            </select><br><br>
+
+            <label for="property_area">Property Area:</label>
+            <input type="text" id="property_area" name="property_area"><br><br>
+
+            <label for="furnishing">Furnishing:</label>
+            <select id="furnishing" name="furnishing">
+                <option value="Semi_Furnished">Semi-Furnished</option>
+                <option value="Unfurnished">Unfurnished</option>
+                <option value="Fully Furnished">Fully Furnished</option>
+            </select><br><br>
+
+            <label for="power_backup">Power Backup:</label>
+            <select id="power_backup" name="power_backup">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select><br><br>
+
+            <label for="water_supply">Water Supply:</label>
+            <select id="water_supply" name="water_supply">
+                <option value="Once in a day - Morning">Once in a day - Morning</option>
+                <option value="Once in a day - Evening">Once in a day - Evening</option>
+                <option value="All time">All time</option>
+                <option value="Once in two days">Once in two days</option>
+            </select><br><br>
+
+            <label for="crime_rate">Crime Rate:</label>
+            <select id="crime_rate" name="crime_rate">
+                <option value="Slightly below average">Slightly below average</option>
+                <option value="Well below average">Well below average</option>
+                <option value="Well above average">Well above average</option>
+                <option value="Slightly above average">Slightly above average</option>
+            </select><br><br>
+
+            <label for="dust_and_noise">Dust and Noise:</label>
+            <select id="dust_and_noise" name="dust_and_noise">
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+            </select><br><br>
+
+            <label for="frequency_of_powercuts">Frequency of Powercuts:</label>
+            <input type="text" id="frequency_of_powercuts" name="frequency_of_powercuts"><br><br>
+
+            <label for="traffic_density_score">Traffic Density Score:</label>
+            <input type="text" id="traffic_density_score" name="traffic_density_score"><br><br>
+
+            <label for="air_quality_index">Air Quality Index:</label>
+            <input type="text" id="air_quality_index" name="air_quality_index"><br><br>
+
+            <label for="neighborhood_review">Neighborhood Review:</label>
+            <input type="text" id="neighborhood_review" name="neighborhood_review"><br><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+
+</html>
